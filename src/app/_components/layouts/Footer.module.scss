@@ -36,22 +36,23 @@
   gap: 1rem;
   font-size: 1.5rem;
   & a {
-    color: v.$grey-color-6;
+    color: v.$grey-color-4;
     &:hover {
-      color: v.$color-primary;
+      color: v.$color-secondary;
     }
   }
 }
 
 .nav a:hover,
 .nav a:focus {
-  color: v.$color-primary;
+  color: v.$color-secondary;
 }
 
 .copyright {
   margin: 1em;
   align-self: center;
   justify-self: center;
+  color: v.$color-primary-light;
 }
 
 .logo {

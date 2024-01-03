@@ -4,7 +4,7 @@ import useHttp from "../../_hooks/use-http";
 import useInput from "../../_hooks/use-input";
 import { emailValidate } from "../../_lib/input-utils";
 import { Res } from "../../_types/interfaces";
-import logo from "../../../../public/assets/ColorEMLargelogo-nobackground.png";
+import logo from "../../../../public/assets/Color logo - no background.svg";
 import Modal from "./Modal";
 import classes from "./SubscribeButton.module.scss";
 

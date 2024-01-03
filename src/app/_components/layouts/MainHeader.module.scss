@@ -9,7 +9,7 @@
   padding: 0 2%;
   align-items: center;
   justify-content: space-between;
-  background-color: v.$color-neutral-dark;
+  background-color: v.$color-primary;
   z-index: 100;
   border-bottom: 1px solid rgba(189, 189, 189, 0.144);
 
@@ -65,7 +65,7 @@
 
   &:hover {
     // display: block;
-    color: v.$color-primary;
+    color: v.$color-secondary;
     transform: scale(1.04);
     transition: all 0.2s ease;
   }
@@ -74,8 +74,8 @@
 .header button {
   padding: 0.75rem 1rem;
   flex-grow: 0;
-  color: v.$grey-color-1;
-  background-color: v.$color-primary;
+  color: v.$color-primary;
+  background-color: v.$color-secondary;
 
   border: 2px solid v.$color-primary;
   font-weight: 400;
@@ -85,7 +85,7 @@
 
 .header button:hover {
   color: v.$color-primary;
-  background-color: v.$grey-color-2;
+  background-color: v.$color-neutral;
   transform: scale(1.05);
   border-color: v.$color-primary;
 }

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Banner from "../UI/Banner";
 import Image from "next/image";
-import logo from "../../../../public/assets/ColorEMLargelogo-nobackground.png";
+import logo from "../../../../public/assets/Color logo - no background.svg";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {

@@ -1,5 +1,5 @@
-$color-primary: #8e0b0b;
-$color-primary-dark: #bd0f0f;
+$color-primary: #0092ca;
+$color-primary-dark: #0092ca;
 $grey-color-0: #f8f9fa;
 $grey-color-1: #f1f3f5;
 $grey-color-2: #e9ecef;
@@ -11,11 +11,11 @@ $grey-color-7: #495057;
 $grey-color-8: #343a40;
 $grey-color-9: #212529;
 
-$color-primary-light: #aecbf4;
+$color-primary-light: #ffffff;
 
-$color-secondary: $grey-color-6;
+$color-secondary: #fff602;
 
-$color-neutral: #1f2833;
+$color-neutral: #d4d4d4;
 
 $transparent: #252a3431;
 $transparent-less: #252a34e0;
@@ -30,7 +30,7 @@ $text-color-dark: $grey-color-9;
 
 $color-neutral-dark: $grey-color-0;
 
-$color-footer: $color-neutral-dark;
+$color-footer: $color-primary;
 $color-main: $color-primary;
-$color-navLinks: $grey-color-8;
+$color-navLinks: $color-primary-light;
 $color-blogTitle: $grey-color-8;

@@ -3,7 +3,7 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import Image from "next/legacy/image";
-import logo from "../../../public/assets/ColorEMLargelogo-nobackground.png";
+import logo from "../../../public/assets/Color logo - no background.svg";
 
 const About = () => {
   return (

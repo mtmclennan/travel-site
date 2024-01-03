@@ -4,7 +4,7 @@ import Link from "next/link";
 import classes from "./MainHeader.module.scss";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Logo from "../../../../public/assets/Colorlogo-nobackground.svg";
+import logo from "../../../../public/assets/Color logo - no background wide.svg";
 
 import { Fragment, useEffect, useState } from "react";
 import Hamburger from "./Hamburger";
@@ -33,7 +33,7 @@ const MainHeader = ({ currentRoute }: { currentRoute: string }) => {
         <nav className={classes.nav}>
           <div className={classes.logo}>
             <Image
-              src={Logo}
+              src={logo}
               alt="EdgeInMind"
               fill
               sizes="223px"
