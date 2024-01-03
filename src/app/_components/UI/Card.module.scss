@@ -1,0 +1,16 @@
+@use "../../styles/abstracts/mixins" as m;
+@use "../../styles/abstracts/variables" as v;
+
+.card {
+  list-style: none;
+  width: 55rem;
+  height: 60rem;
+  border-radius: 5px;
+  position: relative;
+  background-color: v.$grey-color-0;
+  box-shadow: v.$box-shadow-dark;
+  @include m.mediaPhone {
+    width: 100vw;
+    height: fit-content;
+  }
+}

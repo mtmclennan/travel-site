@@ -1,0 +1,114 @@
+@use "../../styles/abstracts/mixins" as m;
+@use "../../styles/abstracts/variables" as v;
+
+.header {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  padding: 0 2%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: v.$color-neutral-dark;
+  z-index: 100;
+  border-bottom: 1px solid rgba(189, 189, 189, 0.144);
+
+  @include m.mediaDesktop {
+    position: relative;
+  }
+}
+
+.headerClear {
+  background-color: rgba(0, 0, 0, 0.082);
+}
+
+.linksLarger {
+  margin: auto;
+}
+
+.nav {
+  @include m.flexCenter();
+  height: 5rem;
+  font-weight: 500;
+  color: v.$grey-color-1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  width: 23rem;
+  height: 100%;
+  position: relative;
+  height: 75%;
+
+  cursor: pointer;
+
+  & a {
+    width: 100%;
+  }
+}
+
+.header ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.header li {
+  margin: 1em;
+}
+.header a {
+  letter-spacing: 0.15rem;
+  color: v.$color-navLinks;
+
+  &:hover {
+    // display: block;
+    color: v.$color-primary;
+    transform: scale(1.04);
+    transition: all 0.2s ease;
+  }
+}
+
+.header button {
+  padding: 0.75rem 1rem;
+  flex-grow: 0;
+  color: v.$grey-color-1;
+  background-color: v.$color-primary;
+
+  border: 2px solid v.$color-primary;
+  font-weight: 400;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.header button:hover {
+  color: v.$color-primary;
+  background-color: v.$grey-color-2;
+  transform: scale(1.05);
+  border-color: v.$color-primary;
+}
+
+.actionContainer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 800px) {
+  .header ul {
+    display: flex;
+  }
+
+  .actionContainer {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .header ul,
+  .actionContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+@use "../../styles/abstracts/mixins" as m;
+@use "../../styles/abstracts/variables" as v;
+
+.container {
+  @include m.flexCenter(column);
+  position: relative;
+  /* margin-top: 1em; */
+  padding-top: 2em;
+  background-color: v.$color-neutral-dark;
+
+  // background-color: v.$transparent;
+  & h1 {
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+
+.container a:last-child {
+  /* margin-top: 1em; */
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  background-color: v.$color-primary;
+  border: 1px solid v.$color-primary;
+  color: v.$text-color-light;
+  margin-bottom: 1em;
+
+  &:hover {
+    background-color: v.$grey-color-0;
+    color: v.$color-primary;
+  }
+}
+
+.body {
+  max-width: 850px;
+  line-height: 1.5;
+  padding: 1em;
+  /* background-color:  */
+}
+
+.bodyContainer {
+  @include m.flexCenter(column);
+  padding-top: 20rem;
+  margin-top: -19rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  background-color: v.$grey-color-1;
+  color: v.$text-color-mid-dark;
+  & span {
+    line-height: 1.5;
+    font-size: 1.4rem;
+  }
+}
+
+.title {
+  color: v.$color-blogTitle;
+  font-size: 4rem;
+}
+
+.image {
+  width: 100rem;
+  max-width: 100vw;
+  aspect-ratio: 2 /1;
+  position: relative;
+
+  @include m.mediaPhone() {
+    width: 100vw;
+  }
+}
