@@ -31,7 +31,7 @@ const Footer = () => {
       <div className={classes.logo}>
         <Image
           src={logo}
-          alt="EdgeInMind"
+          alt="Arvacay"
           fill
           sizes="(min-width: 1280px) 320px, (min-width: 820px) calc(22.95vw + 31px), 199px"
         />
@@ -71,7 +71,7 @@ const Footer = () => {
         <Link href="/legal/privacy-policy">Privacy Policy</Link>
       </div>
       <div className={classes.copyright}>
-        <p>{`©${year} By EdgeInMind`}</p>
+        <p>{`©${year} By Arvacay`}</p>
       </div>
     </footer>
   );

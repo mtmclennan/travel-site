@@ -96,7 +96,7 @@ const SubscribeButton = () => {
         <Modal onClose={onCloseHandler}>
           <div className={classes.container}>
             <div className={classes.logo}>
-              <Image src={logo} alt="EDGEINMIND" />
+              <Image src={logo} alt="Arvacay" />
             </div>
             {showThankYou ? <ThankYouMessage /> : <SignUpMessage />}
           </div>

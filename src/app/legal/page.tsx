@@ -9,48 +9,50 @@ const TermsAndConditions = () => {
       </div>
       <div className="terms__wrapper">
         <section className="terms">
+          <h3>Welcome to Arvacay.com!</h3>
+          <br></br>
           <p>
-            Welcome to EdgeInMind.com! By accessing and using this website, you
-            agree to be bound by these Terms and Conditions. Please read them
-            carefully before using our services.
+            By accessing and using this website, you agree to be bound by these
+            Terms and Conditions. Please read them carefully before using our
+            services.
           </p>
           <p>&nbsp;</p>
           <p>Intellectual Property:</p>
           <p>
             All content, including text, graphics, images, logos, and other
-            materials on EdgeInMind.com, are the intellectual property of
-            EdgeInMind. You may not reproduce, modify, distribute, or republish
-            any content from this website without our prior written consent.
+            materials on arvacay.com, are the intellectual property of Arvacay.
+            You may not reproduce, modify, distribute, or republish any content
+            from this website without our prior written consent.
           </p>
           <p>&nbsp;</p>
           <p>Use of Website:</p>
           <p>
             You are granted a limited, non-exclusive, and non-transferable
-            license to access and use EdgeInMind.com for personal,
-            non-commercial purposes only. You agree not to use this website for
-            any unlawful or prohibited activities.
+            license to access and use Arvacay.com for personal, non-commercial
+            purposes only. You agree not to use this website for any unlawful or
+            prohibited activities.
           </p>
           <p>&nbsp;</p>
           <p>Disclaimer of Warranties:</p>
           <p>
-            EdgeInMind.com and its content are provided &quot;as is&quot;
-            without any warranties, express or implied. We do not guarantee the
+            Arvacay.com and its content are provided &quot;as is&quot; without
+            any warranties, express or implied. We do not guarantee the
             accuracy, completeness, or reliability of the information on this
             website. Your use of this website is at your own risk.
           </p>
           <p>&nbsp;</p>
           <p>Limitation of Liability:</p>
           <p>
-            EdgeInMind and its team shall not be liable for any direct,
-            indirect, incidental, consequential, or punitive damages arising
-            from your use or inability to use EdgeInMind.com. This includes
-            damages for errors, omissions, or delays in content, loss of data,
-            or any other losses resulting from the use of this website.
+            Arvacay and its team shall not be liable for any direct, indirect,
+            incidental, consequential, or punitive damages arising from your use
+            or inability to use Arvacay.com. This includes damages for errors,
+            omissions, or delays in content, loss of data, or any other losses
+            resulting from the use of this website.
           </p>
           <p>&nbsp;</p>
           <p>Third-Party Content and Links:</p>
           <p>
-            EdgeInMind.com may include third-party content, links, or
+            Arvacay.com may include third-party content, links, or
             advertisements. We do not endorse, control, or assume responsibility
             for any third-party websites or their content. Your interactions
             with third-party websites are subject to their respective terms and
@@ -59,16 +61,16 @@ const TermsAndConditions = () => {
           <p>&nbsp;</p>
           <p>Modification of Services:</p>
           <p>
-            EdgeInMind reserves the right to modify or discontinue any aspect of
+            Arvacay reserves the right to modify or discontinue any aspect of
             this website, including its content and services, at any time
             without prior notice.
           </p>
           <p>&nbsp;</p>
           <p>Indemnification:</p>
           <p>
-            You agree to indemnify and hold harmless EdgeInMind and its team
-            from any claims, losses, damages, liabilities, and expenses arising
-            out of your use of this website or violation of these Terms and
+            You agree to indemnify and hold harmless Arvacay and its team from
+            any claims, losses, damages, liabilities, and expenses arising out
+            of your use of this website or violation of these Terms and
             Conditions.
           </p>
           <p>&nbsp;</p>
@@ -76,39 +78,35 @@ const TermsAndConditions = () => {
           <p>
             These Terms and Conditions shall be governed by and construed in
             accordance with the laws of Ontario, Canada. Any dispute arising
-            from these terms or your use of EdgeInMind.com shall be subject to
-            the exclusive jurisdiction of the courts of Ontario, Canada.
+            from these terms or your use of Arvacay.com shall be subject to the
+            exclusive jurisdiction of the courts of Ontario, Canada.
           </p>
           <p>&nbsp;</p>
           <p>Changes to Terms and Conditions:</p>
           <p>
-            EdgeInMind reserves the right to update these Terms and Conditions
-            from time to time. Any changes will be effective immediately upon
-            posting on this website. We encourage you to review these terms
-            regularly to stay informed about any modifications.
+            Arvacay reserves the right to update these Terms and Conditions from
+            time to time. Any changes will be effective immediately upon posting
+            on this website. We encourage you to review these terms regularly to
+            stay informed about any modifications.
           </p>
           <p>&nbsp;</p>
           <p>Contact Us:</p>
           <p>
             If you have any questions, concerns, or requests regarding these
-            Terms and Conditions, please contact us at edgeinmind@gmail.com.
+            Terms and Conditions, please contact us at arvacay@gmail.com.
           </p>
           <p>&nbsp;</p>
           <p></p>
-
           <h3>Privacy Policy:</h3>
-
           <Link href="/legal/privacy-policy">Read Privacy Policy</Link>
           <p>&nbsp;</p>
-
           <h3>Disclaimers:</h3>
           <Link href="/legal/disclaimer">Disclaimer</Link>
           <p>&nbsp;</p>
-
           <p>
-            By using EdgeInMind.com, you acknowledge that you have read,
+            By using arvacay.com, you acknowledge that you have read,
             understood, and agreed to abide by these Terms, Conditions,
-            disclaimers and privacy policy. Last updated July 27, 2023.
+            disclaimers and privacy policy. Last updated January 8, 2024.
           </p>
         </section>
       </div>

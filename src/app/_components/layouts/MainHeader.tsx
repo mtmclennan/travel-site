@@ -34,7 +34,7 @@ const MainHeader = ({ currentRoute }: { currentRoute: string }) => {
           <div className={classes.logo}>
             <Image
               src={logo}
-              alt="EdgeInMind"
+              alt="Arvacay"
               fill
               sizes="223px"
               onClick={() => router.push("/")}

@@ -1,11 +1,11 @@
 "use client";
 
 import type { Metadata } from "next";
-// import Head from "next/head";
+
 import { Fragment, useEffect, useState } from "react";
 import FeaturedPost from "../_components/posts/FeaturedPost";
 import Pagination from "../_components/UI/Pagination";
-// import { getAllPosts } from "../_lib/post-utils";
+
 import { Post } from "../_types/interfaces";
 import { formatDate } from "../_lib/post-utils";
 import PostCard from "../_components/posts/PostCard";
@@ -13,12 +13,12 @@ type PostsData = {
   posts: { data: Post[] };
 };
 
-type SetStatePostArr = React.Dispatch<React.SetStateAction<PostsData>>;
+// type SetStatePostArr = React.Dispatch<React.SetStateAction<PostsData>>;
 
 export const metadata: Metadata = {
-  title: "Blog | EDGEINMIND: Mastering Stock Market Mindset for Success",
+  title: "Blog | Arvacay",
   description:
-    "EDGEINMIND: Your gateway to gaining an upper hand in the market. Harness the power of mindset, refine your approach, and achieve trading excellence.",
+    "Embark on a journey with Arvacay, your ultimate travel planning companion! Discover road trip tips, budget-friendly adventures, and top-notch accommodations. Your passport to unforgettable experiences awaits. Start exploring now!",
 };
 
 const Blog = ({ posts }: PostsData) => {
@@ -59,15 +59,6 @@ const Blog = ({ posts }: PostsData) => {
 
   return (
     <Fragment>
-      {/* <Head>
-        <title>
-          Blog | EDGEINMIND: Mastering Stock Market Mindset for Success
-        </title>
-        <meta
-          name="description"
-          content="EDGEINMIND: Your gateway to gaining an upper hand in the market. Harness the power of mindset, refine your approach, and achieve trading excellence."
-        />
-      </Head> */}
       {featuredPost && (
         <FeaturedPost featuredPost={featuredPost} formatDate={formatDate} />
       )}

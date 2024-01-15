@@ -64,6 +64,15 @@ body {
   z-index: -100;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
 input:focus,
 textarea:focus {
   outline: none;
@@ -465,7 +474,15 @@ button {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-bottom: 10rem;
   max-width: 800px;
+
+  & h2 {
+    margin-bottom: 2rem;
+  }
+  & h3 {
+    margin: 2rem 0;
+  }
 }
 
 .trading-plan__container {

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const cookies = () => {
+const Cookies = () => {
   return (
     <div className="terms__container">
       <div className="terms__heading">
@@ -9,11 +9,11 @@ const cookies = () => {
       </div>
       <div className="terms__wrapper">
         <section className="terms">
-          <p>Last updated: &nbsp;July 27, 2023</p>
+          <p>Last updated: &nbsp;January 8, 2024</p>
           <p>&nbsp;</p>
           <p>Introduction</p>
           <p>
-            Welcome to EdgeInMind.com. This website uses cookies to improve your
+            Welcome to arvacay.com. This website uses cookies to improve your
             browsing experience and to provide us with valuable information on
             how our website is being used. This Cookie Policy explains what
             cookies are, how we use them, and your choices regarding cookies.
@@ -61,18 +61,18 @@ const cookies = () => {
           <p>&nbsp;</p>
           <p>Third-Party Cookies</p>
           <p>
-            EdgeInMind.com may use third-party services that place cookies on
-            your device. These third-party cookies are subject to their
-            respective privacy policies, and we do not have control over their
-            use of cookies.
+            arvacay.com may use third-party services that place cookies on your
+            device. These third-party cookies are subject to their respective
+            privacy policies, and we do not have control over their use of
+            cookies.
           </p>
           <p>&nbsp;</p>
           <p>Your Consent</p>
           <p>
-            By using EdgeInMind.com, you consent to the use of cookies as
-            outlined in this Cookie Policy. You can manage your cookie
-            preferences through your browser settings. Please note that
-            disabling certain cookies may impact your experience on our website.
+            By using arvacay.com, you consent to the use of cookies as outlined
+            in this Cookie Policy. You can manage your cookie preferences
+            through your browser settings. Please note that disabling certain
+            cookies may impact your experience on our website.
           </p>
           <p>&nbsp;</p>
           <p>Opt-Out Options</p>
@@ -84,7 +84,7 @@ const cookies = () => {
           <p>&nbsp;</p>
           <p>Changes to this Policy</p>
           <p>
-            EdgeInMind reserves the right to update or modify this Cookie Policy
+            Arvacay reserves the right to update or modify this Cookie Policy
             from time to time. Any changes will be effective immediately upon
             posting on our website. We encourage you to review this policy
             periodically to stay informed about our cookie practices.
@@ -93,13 +93,13 @@ const cookies = () => {
           <p>Contact Us</p>
           <p>
             If you have any questions or concerns regarding our use of cookies
-            or this Cookie Policy, please contact us at edgeinmind@gmail.com.
+            or this Cookie Policy, please contact us at arvacay@gmail.com.
           </p>
           <p>&nbsp;</p>
 
           <p>
-            By using EdgeInMind.com, you acknowledge that you have read and
-            understood this Cookie Policy. Last updated July 27. 2023.
+            By using arvacay.com, you acknowledge that you have read and
+            understood this Cookie Policy. Last updated January 8. 2024.
           </p>
 
           <p>&nbsp;</p>
@@ -121,4 +121,4 @@ const cookies = () => {
   );
 };
 
-export default cookies;
+export default Cookies;

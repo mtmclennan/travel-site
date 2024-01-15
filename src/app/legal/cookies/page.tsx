@@ -1,14 +1,14 @@
 import React from "react";
 import { Metadata } from "next";
-import Contact from "./Contact";
+import Cookies from "./cookies";
 
 export const metadata: Metadata = {
-  title: "Contact | Arvacay: How Can we Help?",
-  description: "Contact page",
+  title: "Cookies | Arvacay",
+  description: "Cookies - How this site uses cookies",
 };
 
 const page = () => {
-  return <Contact />;
+  return <Cookies />;
 };
 
 export default page;

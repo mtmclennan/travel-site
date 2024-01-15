@@ -1,30 +1,15 @@
 "use client";
 
 import { Fragment } from "react";
-import Head from "next/head";
 import Image from "next/image";
 import logo from "../../public/assets/Color logo - no background.svg";
 import { useRouter } from "next/navigation";
-// import type { Metadata } from "next";
-
-// export const metadata: Metadata = {
-//   title: "EDGEINMIND: Mastering Stock Market Mindset for Success",
-//   description:
-//     "EDGEINMIND: Your gateway to gaining an upper hand in the market. Harness the power of mindset, refine your approach, and achieve trading excellence.",
-// };
 
 const Home = () => {
   const router = useRouter();
 
   return (
     <Fragment>
-      <Head>
-        <title>Home | EDGEINMIND</title>
-        <meta
-          name="description"
-          content="EdgeInMind: Your gateway to gaining an upper hand in the market. Harness the power of mindset, refine your approach, and achieve trading excellence."
-        />
-      </Head>
       <div className="hero__container">
         <section className="hero">
           <div className="hero-title">
@@ -37,7 +22,7 @@ const Home = () => {
           </div>
           <div className="hero-logo">
             <div className="hero-logo__image-container">
-              <Image src={logo} alt="EdgeInMind" width={600} height={350} />
+              <Image src={logo} alt="Arvacay" width={600} height={350} />
             </div>
           </div>
         </section>

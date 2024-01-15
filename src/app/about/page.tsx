@@ -3,8 +3,8 @@ import About from "./About";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | EDGEINMIND",
-  description: "About Edgeinmind company",
+  title: "About | Arvacay",
+  description: "About Arvacay",
 };
 
 const page = () => {
