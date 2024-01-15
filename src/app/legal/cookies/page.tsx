@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import Cookies from "./cookies";
+import Cookies from "./Cookies";
 
 export const metadata: Metadata = {
   title: "Cookies | Arvacay",
