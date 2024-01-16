@@ -13,6 +13,7 @@ export const getAllPosts = async () => {
 export const getBySlug = async (slug: string) => {
   const res = await fetch(`${process.env.SERVER_URL_BY_SLUG}${slug}`, {
     method: "POST",
+    next: { revalidate: 86400 },
   });
 
   const post = await res.json();
