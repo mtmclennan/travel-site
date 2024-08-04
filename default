@@ -1,17 +1,59 @@
-
-
+# Redirect all HTTP traffic to HTTPS
 server {
     listen 80;
-    listen [::]:80 default_server ipv6only=on;
+    listen [::]:80;
+    server_name edgeinbusiness.com www.edgeinbusiness.com arvacay.com www.arvacay.com yardoasis.info www.yardoasis.info bellhouseexcavating.ca www.bellhouseexcavating.ca;
     return 301 https://$host$request_uri;
+}
+
+# Redirect www to non-www for HTTPS
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name www.edgeinbusiness.com;
+    return 301 https://edgeinbusiness.com$request_uri;
+    ssl_certificate /etc/letsencrypt/live/edgeinbusiness.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/edgeinbusiness.com/privkey.pem; # managed by Certbot
+    include snippets/ssl-params.conf;
 }
 
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
+    server_name www.arvacay.com;
+    return 301 https://arvacay.com$request_uri;
+    ssl_certificate /etc/letsencrypt/live/arvacay.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/arvacay.com/privkey.pem; # managed by Certbot
+    include snippets/ssl-params.conf;
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name www.yardoasis.info;
+    return 301 https://yardoasis.info$request_uri;
+    ssl_certificate /etc/letsencrypt/live/yardoasis.info/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/yardoasis.info/privkey.pem; # managed by Certbot
+    include snippets/ssl-params.conf;
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name www.bellhouseexcavating.ca;
+    return 301 https://bellhouseexcavating.ca$request_uri;
+    ssl_certificate /etc/letsencrypt/live/bellhouseexcavating.ca/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/bellhouseexcavating.ca/privkey.pem; # managed by Certbot
+    include snippets/ssl-params.conf;
+}
+
+# EdgeInBusiness
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
     server_name edgeinbusiness.com;
-    ssl_certificate /etc/letsencrypt/live/edgeinbusiness.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/edgeinbusiness.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/edgeinbusiness.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/edgeinbusiness.com/privkey.pem; # managed by Certbot
     include snippets/ssl-params.conf;
 
     location / {
@@ -23,21 +65,16 @@ server {
         proxy_set_header Host $http_host;
         proxy_cache_bypass $http_upgrade;
         proxy_redirect off;
-
-   }
+    }
 }
 
+# Arvacay
 server {
-    # Enable HTTP/2
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name arvacay.com;
-
-    # Use the Let’s Encrypt certificates
-    ssl_certificate /etc/letsencrypt/live/edgeinbusiness.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/edgeinbusiness.com/privkey.pem;
-
-    # Include the SSL configuration from cipherli.st
+    ssl_certificate /etc/letsencrypt/live/arvacay.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/arvacay.com/privkey.pem; # managed by Certbot
     include snippets/ssl-params.conf;
 
     location / {
@@ -50,18 +87,15 @@ server {
         proxy_cache_bypass $http_upgrade;
         proxy_redirect off;
     }
-}	
+}
+
+# Yard Oasis
 server {
-    # Enable HTTP/2
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name yardoasis.info;
-
-    # Use the Let’s Encrypt certificates
-    ssl_certificate /etc/letsencrypt/live/edgeinbusiness.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/edgeinbusiness.com/privkey.pem;
-
-    # Include the SSL configuration from cipherli.st
+    ssl_certificate /etc/letsencrypt/live/yardoasis.info/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/yardoasis.info/privkey.pem; # managed by Certbot
     include snippets/ssl-params.conf;
 
     location / {
@@ -76,4 +110,23 @@ server {
     }
 }
 
+# Bellhouse Excavating
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name bellhouseexcavating.ca;
+    ssl_certificate /etc/letsencrypt/live/bellhouseexcavating.ca/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/bellhouseexcavating.ca/privkey.pem; # managed by Certbot
+    include snippets/ssl-params.conf;
 
+    location / {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-NginX-Proxy true;
+        proxy_pass http://localhost:8000;
+        proxy_ssl_session_reuse off;
+        proxy_set_header Host $http_host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_redirect off;
+    }
+}
