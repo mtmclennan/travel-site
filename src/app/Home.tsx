@@ -17,7 +17,9 @@ const Home = () => {
             <h2>Looking For Vacation Tips?</h2>
             <div className="hero__button-container">
               <button onClick={() => router.push("/blog")}>Blog</button>
-              <button onClick={() => router.push("/tools")}>Tools</button>
+              <button onClick={() => router.push("/resources")}>
+                Resources
+              </button>
             </div>
           </div>
           <div className="hero-logo">
