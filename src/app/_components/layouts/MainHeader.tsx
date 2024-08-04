@@ -19,7 +19,8 @@ const MainHeader = ({ currentRoute }: { currentRoute: string }) => {
   const homeClassname = currentRoute === "/" ? "active" : "non-active";
   const blogClassname = currentRoute === "/blog" ? "active" : "non-active";
   const aboutClassname = currentRoute === "/about" ? "active" : "non-active";
-  const toolsClassname = currentRoute === "/tools" ? "active" : "non-active";
+  const toolsClassname =
+    currentRoute === "/resources" ? "active" : "non-active";
   const contactClassname =
     currentRoute === "/contact" ? "active" : "non-active";
 
@@ -52,8 +53,8 @@ const MainHeader = ({ currentRoute }: { currentRoute: string }) => {
               </Link>
             </li>
             <li>
-              <Link href="/tools" className={toolsClassname}>
-                Tools
+              <Link href="/resources" className={toolsClassname}>
+                Resources
               </Link>
             </li>
             <li>

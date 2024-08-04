@@ -24,28 +24,28 @@ const MobileMenu = ({
     <div className={menuClass}>
       <ul>
         <li className={classes.link}>
-          <Link href="/"
-            className={homeClassname}>Home
+          <Link href="/" className={homeClassname}>
+            Home
           </Link>
         </li>
         <li className={classes.link}>
-          <Link href="/blog"
-      className={blogClassname}>Blog
+          <Link href="/blog" className={blogClassname}>
+            Blog
           </Link>
         </li>
         <li className={classes.link}>
-          <Link href="/tools"
-      className={toolsClassname}>Tools
+          <Link href="/resources" className={toolsClassname}>
+            Resources
           </Link>
         </li>
         <li className={classes.link}>
-          <Link href="/about"
-     className={aboutClassname}>About
+          <Link href="/about" className={aboutClassname}>
+            About
           </Link>
         </li>
         <li className={classes.link}>
-          <Link href="/contact"
-            className={contactClassname}>Contact
+          <Link href="/contact" className={contactClassname}>
+            Contact
           </Link>
         </li>
       </ul>

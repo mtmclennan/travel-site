@@ -4,7 +4,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About | Arvacay",
-  description: "About Arvacay",
+  description:
+    "Discover Arvacay, your ultimate travel planning companion! Get road trip tips, budget-friendly travel advice, and top accommodation recommendations. Explore the world with confidence and make every journey unforgettable",
 };
 
 const page = () => {

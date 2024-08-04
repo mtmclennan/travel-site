@@ -5,6 +5,7 @@ import Cookies from "./Cookies";
 export const metadata: Metadata = {
   title: "Cookies | Arvacay",
   description: "Cookies - How this site uses cookies",
+  robots: { index: false, follow: false },
 };
 
 const page = () => {

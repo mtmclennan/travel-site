@@ -23,7 +23,7 @@ const Footer = () => {
     <footer className={classes.footer}>
       {closeBanner && (
         <Banner
-          link="/legal/PrivacyPolicy"
+          link="/legal/privacy-policy"
           title="This website uses cookies to enhance your browsing experience and provide personalized content. By clicking Accept, you consent to the use of cookies. To learn more about our use of cookies and your options, please read our Cookie Policy."
           setCloseBanner={setCloseBanner}
         />
@@ -49,8 +49,8 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/tools" className={toolsClassname}>
-              Tools
+            <Link href="/resources" className={toolsClassname}>
+              Resources
             </Link>
           </li>
           <li>
